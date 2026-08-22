@@ -1,31 +1,54 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: KiwiHacksNZ
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: KiwiHacks Website
+    url: https://kiwihacks.org
+    maxResponseTime: 2000
+
+  - name: KiwiHacks Account
+    url: https://account.kiwihacks.com
+    maxResponseTime: 4000
+
+  - name: Nest
+    url: https://nest.kiwihacks.com
+    maxResponseTime: 4000
+
+  - name: Nest 26
+    url: https://nest.kiwihacks.org
+    maxResponseTime: 2000
+
+  - name: Nova
+    url: https://nova.kiwihacks.org
+    maxResponseTime: 2000
+
+  - name: Beacons
+    url: https://beacons.kiwihacks.org
+    maxResponseTime: 6000
+
+  - name: Vote
+    url: https://vote.kiwihacks.org
+    maxResponseTime: 3000
+
+  - name: Link Shortener
+    url: https://link.kiwihacks.org
+    maxResponseTime: 2000
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.kiwihacks.com
+  name: KiwiHacks Status
+  introTitle: "KiwiHacks Status"
+  introMessage: Live uptime for every KiwiHacks service, checked every 5 minutes. Built by KiwiHacks, New Zealand's first high school hackathon club.
+  theme: dark
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: KiwiHacks
+      href: https://kiwihacks.org
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+assignees:
+  - N1k0s1
+
+notifications:
+  - type: discord
+    webhook: "$NOTIFICATION_DISCORD_WEBHOOK_URL"
