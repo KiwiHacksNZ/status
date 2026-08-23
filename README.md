@@ -10,12 +10,12 @@ Checks run every 5 minutes on GitHub Actions, independent of KiwiHacks infrastru
 
 ## How it fits together
 
-| Piece | Where | Notes |
-|---|---|---|
-| Checks | GitHub Actions, `uptime.yml`, every 5 min | Free, unlimited minutes because this repo is public |
-| Data | `history/`, `api/`, `graphs/` on `master` | Committed by the workflows |
-| Site build | `site.yml` pushes static output to `gh-pages` | |
-| Hosting | Vercel project `kiwihacks-status`, production branch `gh-pages` | No build command, output dir `.` |
+| Piece      | Where                                                           | Notes                                               |
+| ---------- | --------------------------------------------------------------- | --------------------------------------------------- |
+| Checks     | GitHub Actions, `uptime.yml`, every 5 min                       | Free, unlimited minutes because this repo is public |
+| Data       | `history/`, `api/`, `graphs/` on `master`                       | Committed by the workflows                          |
+| Site build | `site.yml` pushes static output to `gh-pages`                   |                                                     |
+| Hosting    | Vercel project `kiwihacks-status`, production branch `gh-pages` | No build command, output dir `.`                    |
 
 ## Monitored services
 
